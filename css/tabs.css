@@ -1,0 +1,30 @@
+/* Author: Gabe Farrell */
+
+/* style the whole tabs group */
+#tabs {
+    margin-left: 100px;
+    padding:5px; border:1px solid #636363;
+    background:#00000000 none;
+    font-size: 14px;
+    color: #EEE5E5;
+}
+
+/* tab header styles */
+.ui-widget-header {
+    border:0; background:#00000000 none;
+}
+.ui-state-default, .ui-widget-content .ui-state-default {
+    border:1px solid #636363; background:#a2a2a2 none;
+}
+.ui-state-active, .ui-widget-content .ui-state-active {
+    border:0; background:#777 none;
+}
+
+/* style for just the tab contents */
+.ui-tabs-panel{
+    width: 1200px;
+    height: 800px;
+}
+.tabcontent{
+    color: #EEE5E5;
+}

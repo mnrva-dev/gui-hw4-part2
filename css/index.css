@@ -1,0 +1,113 @@
+/* Author: Gabe Farrell */
+
+/* Get fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+/* set colors */
+:root {
+    --color-bg: #151612;
+    --color-text: #EEE5E5;
+    --color-accent: #28AFB0;
+    --color-dark-accent: #19647E;
+    --color-error: #F84049;
+}
+
+/* basic styling */
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Nunito Sans';
+}
+
+h1 {
+    text-align: center;
+}
+
+/* set page format */
+#main {
+    width: 80%;
+    margin: auto;
+}
+#content {
+    position: absolute;
+    top: 110px;
+    left: 500px;
+}
+#sidebar {
+    width: 300px;
+    text-align: center;
+}
+
+/* form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+input {
+    outline: none;
+    padding: .5em;
+}
+input:focus {
+    border: 1px solid var(--color-dark-accent);
+}
+/* form error styling */
+input.error {
+    border: 1px solid var(--color-error);
+}
+div.error {
+    color: var(--color-error);
+    font-size: 12px;
+    font-style: italic;
+}
+/* for each form input group (label and input) */
+.in {
+    margin-top: 1em;
+}
+
+/* style for error message box */
+#err {
+    color: var(--color-error);
+}
+
+/* form submit button style */
+button {
+    margin-top: 1em;
+    width: 150px;
+    height: 50px;
+    background-color: var(--color-bg);
+    border: 2px solid var(--color-text);
+    color: var(--color-text);
+    border-radius: 1em;
+}
+button:hover {
+    cursor: pointer;
+    border: 2px solid var(--color-accent);
+    color: var(--color-accent);
+}
+
+/* table styling */
+table, th, td {
+    border: 1px solid var(--color-accent);
+    margin: auto;
+}
+th, td {
+    padding: .5em;
+}
+th {
+    font-weight: 800;
+    background-color: var(--color-accent);
+    color: var(--color-bg)
+}
+/* make the table scrollable if it goes past its bounds */
+#table-container {
+    width: 1200px;
+    height: 800px;
+    overflow: scroll;
+}
+
+/* slider styling */
+.slider {
+    margin: auto;
+    width: 60%;
+}

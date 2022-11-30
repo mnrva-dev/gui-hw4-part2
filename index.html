@@ -1,0 +1,68 @@
+<!-- Author: Gabe Farrell -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/tabs.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <title>Multiplication Table</title>
+</head>
+<body>
+    <h1>Multiplication Table Generator</h1>
+    <div id="main">
+        <div id="sidebar">
+            <div id="form-container">
+                <form id="form" action="">
+                    <div class="in">
+                        <label for="multiplicand-lower">Mulitplicand Lower Value</label>
+                        <input type="number" id="md-l" name="multiplicand_lower" placeholder="-50 to 50">
+                        <div id="md-l-slider" class="slider"></div>
+                    </div>
+                    <div class="in">
+                        <label for="multiplicand-upper">Multiplicand Upper Value</label>
+                        <input type="number" id="md-u" name="multiplicand_upper" placeholder="-50 to 50">
+                        <div id="md-u-slider" class="slider"></div>
+                    </div>
+                    <div class="in">
+                    <label for="multiplier-lower">Mulitplier Lower Value</label>
+                    <input type="number" id="mr-l" name="multiplier_lower" placeholder="-50 to 50">
+                    <div id="mr-l-slider" class="slider"></div>
+                    </div>
+                    <div class="in">
+                    <label for="multiplier-upper">Multiplier Upper Value</label>
+                    <input type="number" id="mr-u" name="multiplier_upper" placeholder="-50 to 50">
+                    <div id="mr-u-slider" class="slider"></div>
+                    </div>
+                    <div class="in">
+                    <div id="err"></div>
+                    </div>
+                    <div class="in">
+                    <button id="save">Save Table</button>
+                    <button id="delete">Delete Table</button>
+                    <button id="delrange">Delete Table Range</button>
+                    <input type="text" id="tabrange" placeholder="Ex. '2,6'">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="content">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tab-0">Generator</a></li>
+                </ul>
+                <div id="tab-0">
+                    <div id="table-container" class="tabcontent"></div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
